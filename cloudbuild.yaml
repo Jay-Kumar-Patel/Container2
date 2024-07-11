@@ -29,7 +29,7 @@ steps:
     args:
       - '-c'
       - |
-        kubectl get deployment container2-deployment || kubectl apply -f deployment-container2.yml
+        kubectl get deployment container2-deployment || kubectl apply -f deployment-container2.yaml
         kubectl set image deployment/container2-deployment container2=us-central1-docker.pkg.dev/cloud-428816/k8s/container2:latest
         kubectl rollout status deployment/container2-deployment
 
