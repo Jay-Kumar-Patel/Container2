@@ -21,8 +21,7 @@ public class ContainerInOp {
     @PostMapping("calculate")
     public ResponseEntity<Map<String, Object>> calculateFile(@RequestBody Map<Object, Object> input) {
 
-        System.out.println("Demo testing");
-        System.out.println("Testing Kubernetes");
+        System.out.println("testing");
 
         Map<String, Object> output = new HashMap<>();
         readFile(output, input);
